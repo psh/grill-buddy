@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            style="@style/AppTheme.GlassText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/app_name"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="48dp"
+            android:textColor="#ccc"
+            />
+
+        <LinearLayout
+            android:id="@+id/meat_container"
+            style="@style/AppTheme.GlassBox"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous_meat"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_previous_item" />
+
+            <TextView
+                android:id="@+id/meat"
+                style="@style/AppTheme.GlassText"
+                tools:text="Beef" />
+
+            <ImageButton
+                android:id="@+id/next_meat"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_next_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/done_container"
+            style="@style/AppTheme.GlassBox"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous_done"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_previous_item" />
+
+            <TextView
+                android:id="@+id/done"
+                style="@style/AppTheme.GlassText"
+                tools:text="Well Done" />
+
+            <ImageButton
+                android:id="@+id/next_done"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_next_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/range_container"
+            style="@style/AppTheme.GlassBox"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous_range"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_previous_item" />
+
+            <TextView
+                android:id="@+id/range"
+                style="@style/AppTheme.GlassText"
+                tools:text="120\u00B0 - 140\u00B0" />
+
+            <ImageButton
+                android:id="@+id/next_range"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_action_next_item" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

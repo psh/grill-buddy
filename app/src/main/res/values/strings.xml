@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Grill Buddy</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="beef">Beef</string>
+    <string name="lamb">Lamb</string>
+    <string name="pork">Pork</string>
+    <string name="chicken">Chicken</string>
+    <string name="turkey">Turkey</string>
+    <string name="done">Done</string>
+    <string name="medium_well">Medium Well</string>
+    <string name="medium_rare">Medium Rare</string>
+    <string name="uncooked">Uncooked</string>
+    <string name="rare">Rare</string>
+    <string name="medium">Medium</string>
+    <string name="well_done">Well Done</string>
+    <string name="upper_bound">Up to %1$d&#176;</string>
+    <string name="lower_bound">Above %1$d&#176;</string>
+    <string name="bounded">%1$d&#176; - %2$d&#176;</string>
+
+</resources>
