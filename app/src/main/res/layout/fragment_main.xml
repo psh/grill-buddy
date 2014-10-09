@@ -16,11 +16,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/app_name"
         android:gravity="center_horizontal|center_vertical"
-        android:textSize="48dp"
+        android:text="@string/app_name"
         android:textColor="#ccc"
-        />
+        android:textSize="@dimen/main_heading_size" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,8 +34,8 @@
 
             <ImageButton
                 android:id="@+id/previous_meat"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/min_clickable_size"
+                android:layout_height="@dimen/min_clickable_size"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_action_previous_item" />
@@ -47,8 +47,8 @@
 
             <ImageButton
                 android:id="@+id/next_meat"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/min_clickable_size"
+                android:layout_height="@dimen/min_clickable_size"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_action_next_item" />
@@ -57,13 +57,13 @@
         <LinearLayout
             android:id="@+id/done_container"
             style="@style/AppTheme.GlassBox"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/component_gap"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/previous_done"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/min_clickable_size"
+                android:layout_height="@dimen/min_clickable_size"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_action_previous_item" />
@@ -75,8 +75,8 @@
 
             <ImageButton
                 android:id="@+id/next_done"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/min_clickable_size"
+                android:layout_height="@dimen/min_clickable_size"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_action_next_item" />
@@ -85,13 +85,13 @@
         <LinearLayout
             android:id="@+id/range_container"
             style="@style/AppTheme.GlassBox"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/component_gap"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/previous_range"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/min_clickable_size"
+                android:layout_height="@dimen/min_clickable_size"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_action_previous_item" />
@@ -103,8 +103,8 @@
 
             <ImageButton
                 android:id="@+id/next_range"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/min_clickable_size"
+                android:layout_height="@dimen/min_clickable_size"
                 android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_action_next_item" />
