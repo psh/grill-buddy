@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
@@ -29,6 +30,22 @@ public class GrillBuddyFragment extends Fragment {
 
         setFont(view.findViewById(R.id.heading));
         meat = (TextView) view.findViewById(R.id.meat);
+
+        meat.setOnTouchListener(new OnSwipeTouchListener(container.getContext()) {
+
+            @Override
+            public void onSwipeLeft() {
+                model.prevMeat();
+                updateFromModel();
+            }
+            @Override
+            public void onSwipeRight() {
+                model.nextMeat();
+                updateFromModel();
+            }
+        });
+
+
         view.findViewById(R.id.next_meat).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +62,19 @@ public class GrillBuddyFragment extends Fragment {
         });
 
         done = (TextView) view.findViewById(R.id.done);
+
+        done.setOnTouchListener(new OnSwipeTouchListener(container.getContext()) {
+            @Override
+            public void onSwipeLeft() {
+                model.prevDone();
+                updateFromModel();
+            }
+            @Override
+            public void onSwipeRight() {
+                model.nextDone();
+                updateFromModel();
+            }
+        });
         view.findViewById(R.id.next_done).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +91,19 @@ public class GrillBuddyFragment extends Fragment {
         });
 
         range = (TextView) view.findViewById(R.id.range);
+
+        range.setOnTouchListener(new OnSwipeTouchListener(container.getContext()) {
+            @Override
+            public void onSwipeLeft() {
+                model.prevDone();
+                updateFromModel();
+            }
+            @Override
+            public void onSwipeRight() {
+                model.nextDone();
+                updateFromModel();
+            }
+        });
         view.findViewById(R.id.next_range).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
