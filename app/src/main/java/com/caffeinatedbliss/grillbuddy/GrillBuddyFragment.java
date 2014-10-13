@@ -49,14 +49,14 @@ public class GrillBuddyFragment extends Fragment {
         view.findViewById(R.id.next_meat).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                model.nextMeat();
+                model.prevMeat();
                 updateFromModel();
             }
         });
         view.findViewById(R.id.previous_meat).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                model.prevMeat();
+                model.nextMeat();
                 updateFromModel();
             }
         });
@@ -66,26 +66,26 @@ public class GrillBuddyFragment extends Fragment {
         done.setOnTouchListener(new OnSwipeTouchListener(container.getContext()) {
             @Override
             public void onSwipeLeft() {
-                model.prevDone();
+                model.nextDone();
                 updateFromModel();
             }
             @Override
             public void onSwipeRight() {
-                model.nextDone();
+                model.prevDone();
                 updateFromModel();
             }
         });
         view.findViewById(R.id.next_done).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                model.nextDone();
+                model.prevDone();
                 updateFromModel();
             }
         });
         view.findViewById(R.id.previous_done).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                model.prevDone();
+                model.nextDone();
                 updateFromModel();
             }
         });
@@ -95,12 +95,12 @@ public class GrillBuddyFragment extends Fragment {
         range.setOnTouchListener(new OnSwipeTouchListener(container.getContext()) {
             @Override
             public void onSwipeLeft() {
-                model.prevDone();
+                model.nextDone();
                 updateFromModel();
             }
             @Override
             public void onSwipeRight() {
-                model.nextDone();
+                model.prevDone();
                 updateFromModel();
             }
         });
